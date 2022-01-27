@@ -14,14 +14,6 @@ public class SequenceNumberToText
         System.out.printf("%-2s", numbers[index]);
         i++;
 
-        if(index == numbers.length - 1)
-        {
-            return "";
-        }
-
-        else
-        {
-           return PrintHorizontalNumbers(i);
-        }
+        return (index == numbers.length - 1) ? null : PrintHorizontalNumbers(i);
     }
 }
